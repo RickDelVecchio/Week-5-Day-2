@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Author: Ricky L. Del Vecchio
+    Date Created: 08/25/2016 
+                                -->
+            
+<head>
+
+	<link rel="icon" type="image/jpg" href="img/icon.png"> <!-- Tab Icon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A to Z Home and Auto. Cleaning, detailing, auto repair, restoration.">
+    <meta name="author" content="Ricky L. Del Vecchio">
+    
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    
+<title>Newsletter Signup</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    
+    
+    
+</head>
+
+<body> 
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="Index.html"><img src="img/logo.png" alt=""> </a> <!-- Logo -->
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Prices.html">Prices</a></li>
+      <li class="active"><a href="Newsletter.html">Newsletter</a></li>
+      <li><a href="Photos.html">Photo Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+<li><a href="Order.html">Parts Manager</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->
+  
+<div class="container" id="homecontainer">
+  <h1><i>Sign up for our newsletter!</i></h1>
+  <h1 class="linebord">_____<br /><br /></h1> <!-- A border to separate the title and the content -->
+  
+  
+  <div class="formborder">
+  <main> <!--Form to obtain customer info for newsletter-->
+         <br /><form id="email_form" name="email_form" action="join.html" method="get">
+            <label for="email_address1">Email Address:</label> <!--customer email entry-->
+                <input type="text" id="email_address1" name="email_address1">
+                <span id="email_address1_error">*</span><br>
+
+            <label for="email_address2">Re-enter Email Address:</label> <!--customer email confirm entry-->
+                <input type="text" id="email_address2" name="email_address2">
+                <span id="email_address2_error">*</span><br />
+
+            <label for="first_name">First Name</label> <!--customer name entry-->
+                <input type="text" id="first_name" name="first_name">
+                <span id="first_name_error">*</span><br />
+
+            <label>&nbsp;</label>
+            <input type="button" id="join_list" value="Join our List"><br /><br />
+        </form>
+    </main>
+  </div>
+  <br /><br /><br /> <!-- Breaks to make space on bottom of container -->
+</div>
+
+<br /><br /><br /> <!--Breaks to keep the footer speced from the content.-->
+
+<!-- Footer will remain unfixed at the bottom; will contain calander from JS and copywrite logo. -->
+<div class="footer">	
+	<script src="js/calendar.js"></script><!-- Calendar Javascript, displays current date -->
+    <a class="stop" id="clock"></a><!-- Displays current time with use of calendar.js file -->
+    
+    <noscript>2016 --- </noscript> <!-- Default date in case scripting is turned off -->
+      -----  &copy; 2016, A to Z Home and Auto
+</div>
+
+
+<!-------------------------------------------------(Code Separator)-------------------------------------------------->
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Extra JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-shim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-sham.min.js"></script>
+    
+    <!-- JS for form -->
+    <script src="js/email_list.js"></script>
+    
+    <!-- JS for session storage -->
+    <script src="js/library_storage.js"></script>
+    
+</body>
+</html>

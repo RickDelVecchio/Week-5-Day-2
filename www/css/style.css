@@ -1,0 +1,151 @@
+/* Author: Ricky L. Del Vecchio
+	Date Created: 08/25/2016 */
+
+/* CSS Styles */
+
+body {
+  color: white;
+  font-size: 16px;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/bkgrd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+hr {
+  border-color: #F05F40;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #F05F40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Gotham, Cambria, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+h2 > a:hover {
+	color: red;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+/*CSS for the banner*/
+.navbar-brand>img {
+  height: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 12%;
+}
+
+.footer {
+  color: white;
+  font-size: 0.7em;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1B1B1B;
+  text-align: center;
+}
+
+/*Creates border line between title and content*/
+.linebord {
+	color: rgba(255,115,0,1.00);
+	font-weight: bolder;
+	font-size: 3em;
+}
+
+/*Creates text container*/
+#homecontainer {
+	background-color: rgba(81,81,81,0.80);
+}
+
+/*Changes clock color*/
+.stop {
+	color: rgba(255,115,0,1.00);
+}
+
+/*Custom button color*/
+.btn-custom {
+	color: black;
+	background-color: rgba(255,115,0,1.00);
+	font-weight: bold;
+}
+
+/*Border around forms for improved visibility*/
+.formborder {
+	background-color: rgba(61,61,61,0.90);
+	border: groove;
+}
+
+/*Change * and error message to red font, and bold for better visibility*/
+#email_error, #phone_error, #time_error, #parts_error, #email_address1_error, #email_address2_error, #first_name_error {
+	color: rgba(255,0,0,1.00);
+	font-weight: bolder;
+}
+
+/*Changes text color for better visibility*/
+#parts, #time, #quote, #clear, #calculate, #register, #email_address, #email_address1, #email_address2, #first_name, #join_list, #reset_form, #comments, #mobile, #phone, #cents, #calculate, #quarters, #dimes, #nickels, #pennies, #add_task, #task, #task_date, #task_list {
+	color: black;
+}
+
+/*Blocks out faq until clicked*/
+main > div {
+	display: none;
+}
+div.open {
+    display: block;
+}
+
+/*Colors link and makes font larger for better button display*/
+.color {
+	color: #F05F40;
+	font-size: 1.2em;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.container {
+	margin-top: 75px;
+}

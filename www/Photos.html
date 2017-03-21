@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Author: Ricky L. Del Vecchio
+    Date Created: 09/16/2016 
+                                -->
+            
+<head>
+
+	<link rel="icon" type="image/jpg" href="img/icon.png"> <!-- Tab Icon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A to Z Home and Auto. Cleaning, detailing, auto repair, restoration.">
+    <meta name="author" content="Ricky L. Del Vecchio">
+    
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    
+<title>Photo Gallery</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="Index.html"><img src="img/logo.png" alt=""> </a> <!-- Logo -->
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Prices.html">Prices</a></li>
+      <li><a href="Newsletter.html">Newsletter</a></li>
+      <li class="active"><a href="Photos.html">Photo Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+<li><a href="Order.html">Parts Manager</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->
+  
+<div class="container" id="homecontainer">
+  <h1><i>Some Photos of Our Work!</i></h1>
+  <h1 class="linebord">_____<br /><br /></h1> <!-- A border to separate the title and the content -->
+  
+  <!--Rollover pictures-->
+  <p>Hover over a picture to view a second one!</p>
+  <p>
+  	<img src="img/1.jpg" id="img1" alt="Classic Chevy" width="350" height="225"> 
+    <img src="img/2.jpg" id="img2" alt="Ford F-250" width="350" height="225">
+    <img src="img/3.jpg" id="img3" alt="Lifted Jeep Wrangler" width="350" height="225">
+  </p>
+  <br /><br />
+  
+  <!--Link to Slideshow page-->
+  <a href="Photos Slideshow.html" class="btn btn-default btn-block color" role="button">Click here to watch our slideshow!</a>
+  
+<br /><br /><br />  
+</div>
+
+<br /><br /><br /> <!--Breaks to keep the footer speced from the content.-->
+
+<!-- Footer will remain unfixed at the bottom; will contain calander from JS and copywrite logo. -->
+<div class="footer">	
+	<script src="js/calendar.js"></script><!-- Calendar Javascript, displays current date -->
+    <a class="stop" id="clock"></a><!-- Displays current time with use of calendar.js file -->
+    
+    <noscript>2016 --- </noscript> <!-- Default date in case scripting is turned off -->
+      -----  &copy; 2016, A to Z Home and Auto
+</div>
+
+
+<!-------------------------------------------------(Code Separator)-------------------------------------------------->
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Rollover JS-->
+    <script src="js/roll.js"></script>
+    
+    <!-- Extra JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-shim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-sham.min.js"></script>
+    
+</body>
+</html>

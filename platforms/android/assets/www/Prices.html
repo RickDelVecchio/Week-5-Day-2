@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Author: Ricky L. Del Vecchio
+    Date Created: 08/25/2016 
+                                -->
+            
+<head>
+
+	<link rel="icon" type="image/jpg" href="img/icon.png"> <!-- Tab Icon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A to Z Home and Auto. Cleaning, detailing, auto repair, restoration.">
+    <meta name="author" content="Ricky L. Del Vecchio">
+    
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    
+<title>Price Quotes</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""> </a> <!-- Logo -->
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Index.html">Home</a></li>
+      <li class="active"><a href="Prices.html">Prices</a></li>
+      <li><a href="Newsletter.html">Newsletter</a></li>
+      <li><a href="Photos.html">Photo Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+<li><a href="Order.html">Parts Manager</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->
+ 
+<div class="container" id="homecontainer">
+
+<h2><i>Price quote tool</i></h2>
+  <h1 class="linebord">_____<br /><br /></h1> <!-- A border to separate the title and the content -->
+    
+  <!-- Forms that calculates price quote -->
+  	<div class="formborder">
+    	<br />
+        <label for="time">How many hours do you think the repair will take? </label>
+		<input type="text" id="time">
+        <span id="time_error">*</span><br />
+        <label for="parts">How much do you think the parts will cost?</label>
+        <input type="text" id="parts">
+        <span id="parts_error">*</span><br />
+        <label for="quote">Your price quote is: </label>
+        <input type="text" id="quote" disabled><br />
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate Cost"><br />
+        <label>&nbsp;</label>
+        <input type="button" id="clear" value="Clear Entries"><br /><br />
+      
+<p><i>*Prices listed with this tool are approximate. For most accurate quote, please call Shawn at (208) 982-6607.</i></p><br />
+	</div>
+
+<br /><br /><br /> <!-- Breaks to make space on bottom of container -->
+
+</div>
+
+<br /><br /><br /> <!--Breaks to keep the footer speced from the content.-->
+
+<!-- Footer will remain unfixed at the bottom; will contain calander from JS and copywrite logo. -->
+<div class="footer">	
+	<script src="js/calendar.js"></script><!-- Calendar Javascript, displays current date -->
+    <a class="stop" id="clock"></a><!-- Displays current time with use of calendar.js file -->
+    
+    <noscript>2016 --- </noscript> <!-- Default date in case scripting is turned off -->
+      -----  &copy; 2016, A to Z Home and Auto
+</div>
+
+
+<!-------------------------------------------------(Code Separator)-------------------------------------------------->
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS for calculating quote -->
+    <script src="js/price.js"></script>
+    
+    <!-- Extra JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-shim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.10/es5-sham.min.js"></script>
+</body>
+</html>
